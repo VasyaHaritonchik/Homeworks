@@ -6,6 +6,6 @@ public class OutputOfNumbersWithCondition {
       } else {
           System.out.println(integerForTheCycle);
       }
-     }
+    }
   }
 }
