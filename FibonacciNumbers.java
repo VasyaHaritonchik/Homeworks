@@ -18,9 +18,10 @@ public class FibonacciNumbers {
       System.out.println("You did not enter a number or your number is very large. The program stops working)))");
       return;
     }
+    FibonacciNumbers object = new FibonacciNumbers();
     while (!numberTrueOrNot) {
       try {
-        comparisonVariable = FibonacciNumbersReturn(i);
+        comparisonVariable = object.fibonacciNumbersReturn(i);
         if (comparisonVariable == theEnteredNumber) {
           System.out.println("The entered number a Fibonacci number!");
           numberTrueOrNot = true;
@@ -37,7 +38,7 @@ public class FibonacciNumbers {
     }
   }
 
-  private static int FibonacciNumbersReturn(int i) {
+  private int fibonacciNumbersReturn(int i) {
     if ((i == 0) || (i == 1)) {
       return i;
     } else {
