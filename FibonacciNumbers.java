@@ -11,11 +11,11 @@ public class FibonacciNumbers {
       System.out.println("Please, enter a number: ");
       theEnteredNumber = reader.nextInt();
       if (theEnteredNumber < 0) {
-        System.out.println("Your number is less than zero. The program stops working)))");
+        System.out.println("Your number is less than zero. The program stops working!");
         return;
       }
     } catch (Exception e) {
-      System.out.println("You did not enter a number or your number is very large. The program stops working)))");
+      System.out.println("You did not enter a number or your number is very large. The program stops working!");
       return;
     }
     FibonacciNumbers object = new FibonacciNumbers();
@@ -32,7 +32,7 @@ public class FibonacciNumbers {
         }
         i++;
       } catch (Exception d) {
-        System.out.println("The program stops working. In the calculation, the number is out of the allowable value)))");
+        System.out.println("The program stops working. In the calculation, the number is out of the allowable value!");
         return;
       }
     }
@@ -42,7 +42,7 @@ public class FibonacciNumbers {
     if ((i == 0) || (i == 1)) {
       return i;
     } else {
-      return FibonacciNumbersReturn(i - 2) + FibonacciNumbersReturn(i - 1);
+      return fibonacciNumbersReturn(i - 2) + fibonacciNumbersReturn(i - 1);
     }
   }
 }
