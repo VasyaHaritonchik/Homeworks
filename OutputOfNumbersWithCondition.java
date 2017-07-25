@@ -1,10 +1,17 @@
 public class OutputOfNumbersWithCondition {
   public static void main(String[] args) {
     for (int i = 0; i <= 100; i++) {
-      if (i % 3 == 0) {
-        System.out.println("3*" + i / 3);
-      } else {
+      if ((i % 3 != 0) && (i % 5 != 0)) {
         System.out.println(i);
+      }
+      if ((i % 3 == 0) && (i % 5 != 0)) {
+        System.out.println("Tutti");
+      }
+      if ((i % 5 == 0) && (i % 3 != 0)) {
+        System.out.println("Frutti");
+      }
+      if ((i % 3 == 0) && (i % 5 == 0)) {
+        System.out.println("Tutti-Frutti");
       }
     }
   }
